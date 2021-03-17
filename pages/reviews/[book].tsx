@@ -1,13 +1,9 @@
+import Review from "../../app/components/review";
 import config, { ReviewConfig } from "../../app/config";
 
-type ReviewProps = ReviewConfig;
+type ReviewPageProps = ReviewConfig;
 
-const Review = ({ name, img }: ReviewProps) => (
-  <div>
-    <h1>{name}</h1>
-    <img src={img} />
-  </div>
-);
+const ReviewPage = (props: ReviewPageProps) => <Review {...props} />;
 
 export const getStaticPaths = async () => {
   const bookIterable = config.reviews.keys();
@@ -21,4 +17,4 @@ export const getStaticProps = async ({ params }) => ({
   props: config.reviews.get(params.book),
 });
 
-export default Review;
+export default ReviewPage;
