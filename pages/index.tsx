@@ -6,11 +6,11 @@ type HomeProps = {
 
 const Home = ({ books }: HomeProps) => {
   return (
-    <div>
+    <>
       <div className="text-3xl text-center mt-8 sm:mt-16 mb-8">
         Book Reviews
       </div>
-      <div className="md:w-2/3 xl:w-1/2 mx-auto max-w-max pl-8 pr-8 mb-8 text-justify">
+      <div className="md:w-2/3 xl:w-1/2 mx-auto pl-8 pr-8 mb-8 text-justify">
         Books that I have read since the beginning of the pandemic and after the
         quarantine started in Argentina (March/2020). Reviews are from other
         people, this is just a test of the NextJS and TailwindCSS frameworks.
@@ -24,7 +24,7 @@ const Home = ({ books }: HomeProps) => {
           ></img>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
