@@ -1,7 +1,7 @@
 import config from "../app/config";
 
 const Book = ({ book }) => (
-  <div className="lg:w-2/3 2xl:w-1/2 mx-auto p-4">
+  <div className="lg:w-2/3 2xl:w-1/2 mx-auto p-4 xl:pt-16">
     <div className="xl:flex gap-4">
       <div className="xl:flex-1">
         <img
