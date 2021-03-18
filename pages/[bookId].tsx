@@ -1,15 +1,15 @@
 import config from "../app/config";
 
 const Book = ({ book }) => (
-  <div className="md:w-2/3 xl:w-1/2 mx-auto p-8">
-    <div className="flex gap-4">
-      <div className="flex-1">
-        <img className="" src={book.img} />
+  <div className="lg:w-2/3 2xl:w-1/2 mx-auto p-4">
+    <div className="xl:flex gap-4">
+      <div className="xl:flex-1">
+        <img className="mx-auto xl:mx-0" src={book.img} />
       </div>
-      <div className="flex-1">
-        <div className="text-right">
-          <div className="text-6xl">1984</div>
-          <div className="italic">George Orwell</div>
+      <div className="xl:flex-1">
+        <div className="text-center mt-8 xl:mt-0 xl:text-right">
+          <div className="text-6xl">{book.name}</div>
+          <div className="mt-4 italic">George Orwell</div>
         </div>
         <p className="mt-8 text-justify">
           Among the seminal texts of the 20th century, Nineteen Eighty-Four is a
@@ -99,23 +99,24 @@ const Book = ({ book }) => (
   </div>
 );
 
-export default Book;
-
-export const getStaticPaths = () => ({
-  paths: config.books.map((book) => ({
+export const getStaticPaths = () => {
+  const paths = config.books.map((book) => ({
     params: {
-      book: book.isbn,
+      bookId: book.id,
     },
-  })),
-  fallback: false,
-});
+  }));
+  return {
+    paths,
+    fallback: false,
+  };
+};
 
 export const getStaticProps = ({ params }) => {
-  const isbn = params.book;
-
   return {
     props: {
-      book: config.books.find((book) => book.isbn === isbn),
+      book: config.books.find((book) => params.bookId === book.id),
     },
   };
 };
+
+export default Book;

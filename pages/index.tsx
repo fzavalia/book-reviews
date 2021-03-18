@@ -1,4 +1,5 @@
 import config, { BookConfig } from "../app/config";
+import Link from "next/link";
 
 type HomeProps = {
   books: BookConfig[];
@@ -17,11 +18,12 @@ const Home = ({ books }: HomeProps) => {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 pl-8 pr-8 md:w-2/3 xl:w-1/2 mx-auto mb-8">
         {books.map((book) => (
-          <img
-            key={book.isbn}
-            className="shadow-md rounded-lg border-2 dark:border-gray-700 border-gray-300 cursor-pointer transform hover:scale-105 transition-transform ease-linear duration-100"
-            src={book.img}
-          ></img>
+          <Link href={`/${book.id}`} key={book.id}>
+            <img
+              className="shadow-md rounded-lg border-2 dark:border-gray-700 border-gray-300 cursor-pointer transform hover:scale-105 transition-transform ease-linear duration-100"
+              src={book.img}
+            ></img>
+          </Link>
         ))}
       </div>
     </>
