@@ -4,7 +4,11 @@ const Book = ({ book }) => (
   <div className="lg:w-2/3 2xl:w-1/2 mx-auto p-4">
     <div className="xl:flex gap-4">
       <div className="xl:flex-1">
-        <img className="mx-auto xl:mx-0" src={book.img} />
+        <img
+          style={{ maxHeight: 500 }}
+          className="mx-auto xl:mx-0 rounded-xl border-2 dark:border-gray-700 border-gray-300"
+          src={book.img}
+        />
       </div>
       <div className="xl:flex-1">
         <div className="text-center mt-8 xl:mt-0 xl:text-right">
