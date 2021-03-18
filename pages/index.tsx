@@ -1,22 +1,25 @@
-import axios from "axios";
-import config from "../app/config";
+import config, { BookConfig } from "../app/config";
 
 type HomeProps = {
-  books: {
-    img: string;
-  }[];
+  books: BookConfig[];
 };
 
 const Home = ({ books }: HomeProps) => {
   return (
     <div>
-      <div className="text-3xl text-center mt-16 sm:mt-32 mb-16 sm:mb-32">
+      <div className="text-3xl text-center mt-8 sm:mt-16 mb-8">
         Book Reviews
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 max-w-max gap-3 mx-auto">
+      <div className="md:w-2/3 xl:w-1/2 mx-auto max-w-max pl-8 pr-8 mb-8 text-justify">
+        Books that I have read since the beginning of the pandemic and after the
+        quarantine started in Argentina (March/2020). Reviews are from other
+        people, this is just a test of the NextJS and TailwindCSS frameworks.
+      </div>
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 pl-8 pr-8 md:w-2/3 xl:w-1/2 mx-auto">
         {books.map((book) => (
           <img
-            className="h-full shadow-md rounded-lg border-2 dark:border-gray-700 border-gray-300 cursor-pointer transform hover:scale-105 transition-transform ease-linear duration-100"
+            key={book.isbn}
+            className="shadow-md rounded-lg border-2 dark:border-gray-700 border-gray-300 cursor-pointer transform hover:scale-105 transition-transform ease-linear duration-100"
             src={book.img}
           ></img>
         ))}
@@ -26,19 +29,9 @@ const Home = ({ books }: HomeProps) => {
 };
 
 export const getStaticProps = async () => {
-  const books = await Promise.all(
-    config.books.map((isbn) =>
-      axios
-        .get(`https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`)
-        .then((res) => res.data.items[0])
-        .then((item) => ({
-          img: item.volumeInfo.imageLinks.thumbnail,
-        }))
-    )
-  );
   return {
     props: {
-      books,
+      books: config.books,
     },
   };
 };
