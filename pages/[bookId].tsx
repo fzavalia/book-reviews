@@ -2,104 +2,97 @@ import config from "../app/config";
 
 const Book = ({ book }) => (
   <div className="lg:w-2/3 2xl:w-1/2 mx-auto p-4 xl:pt-16">
-    <div className="xl:flex gap-4">
+    <div className="xl:flex gap-4 bg-gradient-to-br from-red-100 to-yellow-200 rounded-2xl p-4 dark:from-green-700 dark:to-blue-900 shadow-md">
       <div className="xl:flex-1">
         <img
           style={{ maxHeight: 500 }}
-          className="mx-auto xl:mx-0 rounded-xl border-2 dark:border-gray-700 border-gray-300"
+          className="mx-auto xl:mx-0 rounded-2xl shadow-lg"
           src={book.img}
         />
       </div>
       <div className="xl:flex-1">
         <div className="text-center mt-8 xl:mt-0 xl:text-right">
           <div className="text-6xl">{book.name}</div>
-          <div className="mt-4 italic">George Orwell</div>
+          <div className="mt-4 italic">Some Author</div>
         </div>
         <p className="mt-8 text-justify">
-          Among the seminal texts of the 20th century, Nineteen Eighty-Four is a
-          rare work that grows more haunting as its futuristic purgatory becomes
-          more real. Published in 1949, the book offers political satirist
-          George Orwell's nightmarish vision of a totalitarian, bureaucratic
-          world and one poor stiff's attempt to find individuality. The
-          brilliance of the novel is Orwell's prescience of modern life—the
-          ubiquity of television, the distortion of the language—and his ability
-          to construct such a thorough version of hell. Required reading for
-          students since it was published, it ranks among the most terrifying
-          novels ever written.
+          Duis eget sem sed ex commodo interdum. Ut vel rhoncus nisl. Nam lorem
+          urna, cursus rhoncus neque a, lacinia volutpat ex. Fusce bibendum
+          molestie auctor. Nunc dolor orci, iaculis at felis dignissim, pretium
+          aliquet nunc. Integer sem velit, vehicula nec hendrerit sit amet,
+          tempus ac dolor. Maecenas maximus purus a augue eleifend, at
+          ullamcorper lectus scelerisque. Ut porta, dolor in rutrum viverra,
+          augue tortor vehicula mauris, tempus malesuada libero mauris ut enim.
+          Integer tincidunt orci nulla, at fermentum turpis porta at. Vestibulum
+          id justo ut mi malesuada tincidunt. Nunc mollis, tellus ut viverra
+          vestibulum, ante felis hendrerit nunc, ut volutpat orci quam sed diam.
+          Cras imperdiet neque sed sollicitudin hendrerit.
         </p>
       </div>
     </div>
-    <div className="mt-8 text-2xl">Review</div>
-    <span>
-      <br />
-      This book is far from perfect. Its characters lack depth, its rhetoric is
-      sometimes didactic, its plot (well, half of it anyway) was lifted from
-      Zumyatin’s <i>We</i>, and the lengthy Goldstein treatise shoved into the
-      middle is a flaw which alters the structure of the novel like a scar
-      disfigures a face.
-      <br />
-      <br />
-      But in the long run, all that does not matter, because George Orwell got
-      it right.
-      <br />
-      <br />
-      Orwell, a socialist who fought against Franco, watched appalled as the
-      great Soviet experiment was reduced to a totalitarian state, a repressive
-      force equal in evil to Fascist Italy or Nazi Germany. He came to realize
-      that ideology in an authoritarian state is nothing but a distraction, a
-      shiny thing made for the public to stare at. He came to realize that the
-      point of control was more control, the point of torture was more torture,
-      that the point of all their "alternative facts" was to fashion a world
-      where people would no longer possess even a word for truth.
+    <div className="mt-8 mb-8 text-2xl">Review</div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl erat,
+      commodo at mattis eget, tristique nec tellus. Nunc consectetur sit amet
+      tellus ut tempus. Phasellus ut ullamcorper erat, ut placerat turpis.
+      Quisque blandit urna et augue ornare, id consectetur turpis molestie.
+      Vestibulum euismod sed sem non hendrerit. Class aptent taciti sociosqu ad
+      litora torquent per conubia nostra, per inceptos himenaeos. Orci varius
+      natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      Duis commodo diam ex, vitae fermentum lectus consectetur eget. Vestibulum
+      ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+      curae; Nam id leo rhoncus, aliquam enim ac, imperdiet diam. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Sed eu sem eros. Donec dui
+      dolor, vulputate nec lacinia id, pretium eu leo. Nullam facilisis
+      efficitur lectus vitae varius. Etiam euismod, ligula sed dictum molestie,
+      magna lectus consectetur orci, quis vehicula nulla sapien ac metus.
+      Vestibulum sit amet diam vel nibh pretium pretium.
       <br />
       <br />
-      <i>
-        If you want a picture of the future, imagine a boot stamping on a human
-        face — forever.
-      </i>{" "}
+      Duis eget sem sed ex commodo interdum. Ut vel rhoncus nisl. Nam lorem
+      urna, cursus rhoncus neque a, lacinia volutpat ex. Fusce bibendum molestie
+      auctor. Nunc dolor orci, iaculis at felis dignissim, pretium aliquet nunc.
+      Integer sem velit, vehicula nec hendrerit sit amet, tempus ac dolor.
+      Maecenas maximus purus a augue eleifend, at ullamcorper lectus
+      scelerisque. Ut porta, dolor in rutrum viverra, augue tortor vehicula
+      mauris, tempus malesuada libero mauris ut enim. Integer tincidunt orci
+      nulla, at fermentum turpis porta at. Vestibulum id justo ut mi malesuada
+      tincidunt. Nunc mollis, tellus ut viverra vestibulum, ante felis hendrerit
+      nunc, ut volutpat orci quam sed diam. Cras imperdiet neque sed
+      sollicitudin hendrerit.
       <br />
       <br />
-      Orwell’s vision of the world is grim; too grim, some would argue, for it
-      may deprive the faint-hearted among us of hope. But Orwell never wanted to
-      take away hope. No, he wished to shock our hearts into resistance by
-      showing us the authoritarian nightmare achieved: a monument of stasis, a
-      tribute to surveillance and control.
+      Nunc interdum vel enim id venenatis. Sed ac turpis id elit tincidunt
+      sagittis ac varius mauris. Nunc ligula mi, tincidunt nec eros sed, auctor
+      mollis orci. Sed vitae dui sit amet neque cursus placerat eget eu tellus.
+      Pellentesque malesuada nulla rhoncus, gravida mi id, consectetur neque.
+      Suspendisse nec libero sodales, congue nunc eget, tincidunt nisl. Duis
+      cursus odio urna, ullamcorper egestas libero pretium vitae. Donec ac nibh
+      sagittis, tincidunt dolor ac, ornare justo. In varius, tortor vel
+      convallis pharetra, mi mi tristique est, vel imperdiet libero ipsum ac
+      lorem. Integer elit ipsum, dignissim ac imperdiet quis, pulvinar nec
+      ipsum. Mauris suscipit, ex vel feugiat varius, ex mi pulvinar nisi, in
+      iaculis turpis urna ut nunc. Aliquam a nisl vel nibh interdum vehicula.
+      Curabitur venenatis fermentum gravida. Nullam et vehicula libero, id
+      efficitur justo. Proin fermentum felis quis mi fringilla volutpat.
       <br />
       <br />
-      Here, in the USA, in 2017, our would-be totalitarians are a long way from
-      stasis. Right now they’re stirring up chaos and confusion, spreading lies
-      and then denying they spread them, hoping to gaslight us into a muddle of
-      helplessness and inactivity. They are trying to destroy a vigorous
-      democracy, and they know it will take much chaos and confusion to bring
-      that democracy down. They hate us most when we march together, when we
-      occupy senate offices and jam the congressional switchboard, when we
-      congregate in pubs and coffee houses and share our outrage and fear, for
-      they know that freedom thrives on solidarity and resistance, and that
-      solidarity and resistance engender love and hope. They much prefer it when
-      we brood in solitude, despairing and alone.
+      Nulla vehicula urna vulputate lectus scelerisque gravida. Pellentesque
+      vestibulum ultricies libero. Suspendisse potenti. Mauris eget eros vel
+      enim feugiat maximus sit amet et tortor. Nunc non velit dui. Morbi
+      scelerisque consectetur lorem nec porta. Ut id felis enim. Duis convallis
+      enim a quam feugiat, accumsan euismod augue posuere. Vestibulum
+      pellentesque et orci eu viverra.
       <br />
       <br />
-      Which reminds me...one of the things we should <i>never</i> do is brood
-      about the enemy’s ideology (
-      <i>Is Steve Bannon a Fascist? A Nazi? A Stalinist?</i>), for while we try
-      to discern his “ideological goals,” the enemy is busy pulling on his
-      boots, and his boots are made with hobnails, with heel irons, and equipped
-      with toecaps of steel.
-      <br />
-      <br />
-      Finally, it does not matter who heads up the authoritarian state: a bully
-      boy like Mussolini, a strutting coprophiliac like Hitler, a Napoleonic pig
-      like Stalin, or a brainless dancing bear like Trump. Whatever the current
-      incarnation of “Big Brother” may be, the goal is always the same:
-      <blockquote>
-        <i>
-          A nation of warriors and fanatics, marching forward in perfect unity,
-          all thinking the same thoughts and shouting the same slogans,
-          perpetually working, fighting, triumphing, persecuting - three hundred
-          million people all with the same face.
-        </i>
-      </blockquote>
-    </span>
+      Aenean metus libero, maximus ut erat vel, maximus posuere est. Nam eu
+      lacus non massa vulputate sollicitudin. Integer dapibus tincidunt quam,
+      nec vestibulum risus facilisis eget. Phasellus sit amet magna ut diam
+      rhoncus tincidunt. Maecenas fringilla tincidunt accumsan. Quisque
+      tristique, eros at interdum blandit, mi justo ornare massa, fermentum
+      dignissim urna mauris non nibh. Aenean varius, ligula id faucibus
+      hendrerit, massa augue fermentum tellus, eu cursus metus orci at magna.
+    </p>
   </div>
 );
 
