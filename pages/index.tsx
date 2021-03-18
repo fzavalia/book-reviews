@@ -16,7 +16,7 @@ const Home = ({ books }: HomeProps) => {
       <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 max-w-max gap-3 mx-auto">
         {books.map((book) => (
           <img
-            className="h-full shadow-md bg-white rounded-lg p-1 bg-opacity-50 cursor-pointer transform hover:scale-105 transition-transform ease-linear duration-100"
+            className="h-full shadow-md rounded-lg border-2 dark:border-gray-700 border-gray-300 cursor-pointer transform hover:scale-105 transition-transform ease-linear duration-100"
             src={book.img}
           ></img>
         ))}
