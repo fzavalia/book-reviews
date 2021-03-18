@@ -5,17 +5,10 @@ module.exports = {
   ],
   darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {
-      backgroundImage: (theme) => ({
-        "forest-dark": "url('/bg-misty-forest-dark.jpg')",
-        "forest-light": "url('/bg-misty-forest.jpg')",
-      }),
-    },
+    extend: {},
   },
   variants: {
-    extend: {
-      backgroundImage: ["dark"],
-    },
+    extend: {},
   },
   plugins: [],
 };
