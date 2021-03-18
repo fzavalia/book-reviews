@@ -5,7 +5,7 @@ const Book = ({ book }) => (
     <div className="xl:flex gap-4 bg-gradient-to-br from-red-100 to-yellow-200 rounded-2xl p-4 dark:from-green-700 dark:to-blue-900 shadow-md">
       <div className="xl:flex-1">
         <img
-          style={{ maxHeight: 500 }}
+          style={{ minHeight: 400, maxHeight: 500 }}
           className="mx-auto xl:mx-0 rounded-2xl shadow-lg"
           src={book.img}
         />
