@@ -15,7 +15,7 @@ const Home = ({ books }: HomeProps) => {
         quarantine started in Argentina (March/2020). Reviews are from other
         people, this is just a test of the NextJS and TailwindCSS frameworks.
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 pl-8 pr-8 md:w-2/3 xl:w-1/2 mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 pl-8 pr-8 md:w-2/3 xl:w-1/2 mx-auto mb-8">
         {books.map((book) => (
           <img
             key={book.isbn}

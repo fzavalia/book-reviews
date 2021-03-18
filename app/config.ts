@@ -78,6 +78,71 @@ const config: Config = {
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386041998l/19119425.jpg",
     }, // Our Enemy, the State (LvMI)
+    {
+      isbn: "0340839937",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546269682l/43419431._SY475_.jpg",
+    }, // Dune
+    {
+      isbn: "1407247190",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1395781457l/17737893.jpg",
+    }, // The Fell Sword
+    {
+      isbn: "0316362476",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493765420l/35053660._SY475_.jpg",
+    }, // Kings of the Wyld
+    {
+      isbn: "0575113375",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431613926l/23129080._SY475_.jpg",
+    }, // The Dread Wyrm
+    {
+      isbn: "0752810650",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347384287l/218736.jpg",
+    }, // In the Electric Mist With Confederate Dead
+    {
+      isbn: "0316270792",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553885082l/37946419._SY475_.jpg",
+    }, // Sixteen Ways to Defend a Walled City
+    {
+      isbn: "031618716X",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558367199l/35606041.jpg",
+    }, // A Little Hatred
+    {
+      isbn: "0765377063",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415428227l/20518872.jpg",
+    }, // The Three-Body Problem
+    {
+      isbn: "0765386690",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454880648l/26114141.jpg",
+    }, // The Dark Forest
+    {
+      isbn: "0765386631",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502101573l/33517569.jpg",
+    }, // Death's End
+    {
+      isbn: "0735211299",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535115320l/40121378._SY475_.jpg",
+    }, // Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones
+    {
+      isbn: "1473208866",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463809721l/26367085._SY475_.jpg",
+    }, // A Plague of Swords
+    {
+      isbn: "1451678185",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1333349737l/13259261.jpg",
+    }, // The Illustrated Man
   ],
 };
 
